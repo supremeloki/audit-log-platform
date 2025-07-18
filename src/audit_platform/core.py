@@ -33,3 +33,5 @@ class AuditRecord:
     def as_dict(self) -> dict[str, Any]:
         return {
             "sequence": self.sequence,
+            "actor": self.actor,
+            "action": self.action,

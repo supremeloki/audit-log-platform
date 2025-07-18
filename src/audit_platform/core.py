@@ -35,3 +35,5 @@ class AuditRecord:
             "sequence": self.sequence,
             "actor": self.actor,
             "action": self.action,
+            "resource": self.resource,
+            "decision": self.decision,

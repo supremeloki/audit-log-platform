@@ -5,3 +5,31 @@ import json
 import threading
 import time
 from dataclasses import dataclass
+from pathlib import Path
+from typing import Any, Callable, Sequence
+
+
+class AuditPlatformError(Exception):
+    pass
+
+
+class TamperDetectedError(AuditPlatformError):
+    def __init__(self, sequence: int) -> None:
+        super().__init__(f"tampering detected at sequence {sequence}")
+        self.sequence = sequence
+
+
+@dataclass(frozen=True)
+class AuditRecord:
+    sequence: int
+    actor: str
+    action: str
+    resource: str
+    decision: str
+    occurred_at: float
+    prev_hash: str
+    record_hash: str
+
+    def as_dict(self) -> dict[str, Any]:
+        return {
+            "sequence": self.sequence,

@@ -37,3 +37,5 @@ class AuditRecord:
             "action": self.action,
             "resource": self.resource,
             "decision": self.decision,
+            "occurred_at": self.occurred_at,
+            "prev_hash": self.prev_hash,

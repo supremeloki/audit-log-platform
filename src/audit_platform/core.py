@@ -40,3 +40,5 @@ class AuditRecord:
             "occurred_at": self.occurred_at,
             "prev_hash": self.prev_hash,
             "record_hash": self.record_hash,
+        }
+

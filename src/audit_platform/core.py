@@ -42,3 +42,5 @@ class AuditRecord:
             "record_hash": self.record_hash,
         }
 
+
+GENESIS = "0" * 64

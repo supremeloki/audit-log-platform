@@ -44,3 +44,5 @@ class AuditRecord:
 
 
 GENESIS = "0" * 64
+
+

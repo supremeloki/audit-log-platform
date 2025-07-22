@@ -49,3 +49,5 @@ GENESIS = "0" * 64
 def compute_hash(record: dict[str, Any]) -> str:
     canonical = json.dumps(record, sort_keys=True, separators=(",", ":"))
     return hashlib.sha256(canonical.encode("utf-8")).hexdigest()
+
+

@@ -51,3 +51,5 @@ def compute_hash(record: dict[str, Any]) -> str:
     return hashlib.sha256(canonical.encode("utf-8")).hexdigest()
 
 
+def build_record(sequence: int, actor: str, action: str, resource: str,
+                 decision: str, occurred_at: float, prev_hash: str) -> AuditRecord:

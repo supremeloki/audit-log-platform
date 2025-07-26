@@ -56,3 +56,5 @@ def build_record(sequence: int, actor: str, action: str, resource: str,
     body = {
         "sequence": sequence,
         "actor": actor,
+        "action": action,
+        "resource": resource,

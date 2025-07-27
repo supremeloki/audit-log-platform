@@ -60,3 +60,5 @@ def build_record(sequence: int, actor: str, action: str, resource: str,
         "resource": resource,
         "decision": decision,
         "occurred_at": occurred_at,
+        "prev_hash": prev_hash,
+    }

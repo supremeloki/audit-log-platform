@@ -62,3 +62,4 @@ def build_record(sequence: int, actor: str, action: str, resource: str,
         "occurred_at": occurred_at,
         "prev_hash": prev_hash,
     }
+    return AuditRecord(

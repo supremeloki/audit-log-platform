@@ -71,3 +71,4 @@ def build_record(sequence: int, actor: str, action: str, resource: str,
 
 class Sink(Protocol := object):
     pass
+

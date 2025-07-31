@@ -76,3 +76,5 @@ class Sink(Protocol := object):
 class InMemorySink:
     def __init__(self) -> None:
         self._records: list[AuditRecord] = []
+        self._lock = threading.Lock()
+

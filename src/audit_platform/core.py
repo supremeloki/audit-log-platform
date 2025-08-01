@@ -81,3 +81,5 @@ class InMemorySink:
     def append(self, record: AuditRecord) -> None:
         with self._lock:
             self._records.append(record)
+
+    def all_records(self) -> list[AuditRecord]:

@@ -79,3 +79,5 @@ class InMemorySink:
         self._lock = threading.Lock()
 
     def append(self, record: AuditRecord) -> None:
+        with self._lock:
+            self._records.append(record)

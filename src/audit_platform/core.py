@@ -85,3 +85,4 @@ class InMemorySink:
     def all_records(self) -> list[AuditRecord]:
         with self._lock:
             return list(self._records)
+

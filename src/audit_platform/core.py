@@ -86,3 +86,5 @@ class InMemorySink:
         with self._lock:
             return list(self._records)
 
+    def last_sequence(self) -> int:
+        with self._lock:

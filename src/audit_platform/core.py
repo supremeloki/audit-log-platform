@@ -88,3 +88,5 @@ class InMemorySink:
 
     def last_sequence(self) -> int:
         with self._lock:
+            return self._records[-1].sequence if self._records else 0
+

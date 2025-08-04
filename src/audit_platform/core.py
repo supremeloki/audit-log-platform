@@ -90,3 +90,5 @@ class InMemorySink:
         with self._lock:
             return self._records[-1].sequence if self._records else 0
 
+    def find_by_actor(self, actor: str) -> list[AuditRecord]:
+        with self._lock:

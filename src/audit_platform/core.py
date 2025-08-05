@@ -94,3 +94,4 @@ class InMemorySink:
         with self._lock:
             return [r for r in self._records if r.actor == actor]
 
+    def tail(self, count: int = 20) -> list[AuditRecord]:

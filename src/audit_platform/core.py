@@ -97,3 +97,5 @@ class InMemorySink:
     def tail(self, count: int = 20) -> list[AuditRecord]:
         with self._lock:
             return list(reversed(self._records[-count:]))
+
+

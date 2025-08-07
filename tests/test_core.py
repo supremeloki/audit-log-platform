@@ -63,3 +63,4 @@ def test_verify_or_raise_raises_on_tampering(platform):
         platform.verify_or_raise()
     assert excinfo.value.sequence == 1
 
+

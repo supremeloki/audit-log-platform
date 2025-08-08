@@ -66,3 +66,4 @@ def test_verify_or_raise_raises_on_tampering(platform):
 
 def test_query_filters_by_actor_and_action(platform):
     platform.log("alice", "read", "d1", "allow")
+    platform.log("bob", "write", "d2", "deny")

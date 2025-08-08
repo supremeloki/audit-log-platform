@@ -64,3 +64,4 @@ def test_verify_or_raise_raises_on_tampering(platform):
     assert excinfo.value.sequence == 1
 
 
+def test_query_filters_by_actor_and_action(platform):

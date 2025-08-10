@@ -69,3 +69,4 @@ def test_query_filters_by_actor_and_action(platform):
     platform.log("bob", "write", "d2", "deny")
     alice_only = platform.query(actor="alice")
     write_only = platform.query(action="write")
+    assert all(r.actor == "alice" for r in alice_only)

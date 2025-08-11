@@ -73,3 +73,4 @@ def test_query_filters_by_actor_and_action(platform):
     assert all(r.action == "write" for r in write_only)
 
 
+def test_limit_returns_newest_first(platform):

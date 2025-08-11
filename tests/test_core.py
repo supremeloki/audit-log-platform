@@ -72,3 +72,4 @@ def test_query_filters_by_actor_and_action(platform):
     assert all(r.actor == "alice" for r in alice_only)
     assert all(r.action == "write" for r in write_only)
 
+

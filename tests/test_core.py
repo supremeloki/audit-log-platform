@@ -76,3 +76,5 @@ def test_query_filters_by_actor_and_action(platform):
 def test_limit_returns_newest_first(platform):
     for i in range(10):
         platform.log("u", f"a{i}", "r", "allow")
+    tail = platform.query(limit=3)
+    actions = [r.action for r in tail]

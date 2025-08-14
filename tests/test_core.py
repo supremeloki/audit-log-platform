@@ -79,3 +79,4 @@ def test_limit_returns_newest_first(platform):
     tail = platform.query(limit=3)
     actions = [r.action for r in tail]
     assert actions == ["a9", "a8", "a7"]
+

@@ -80,3 +80,4 @@ def test_limit_returns_newest_first(platform):
     actions = [r.action for r in tail]
     assert actions == ["a9", "a8", "a7"]
 
+

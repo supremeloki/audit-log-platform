@@ -81,3 +81,4 @@ def test_limit_returns_newest_first(platform):
     assert actions == ["a9", "a8", "a7"]
 
 
+def test_jsonl_sink_persists_across_instances(tmp_path):

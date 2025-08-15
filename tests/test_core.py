@@ -82,3 +82,4 @@ def test_limit_returns_newest_first(platform):
 
 
 def test_jsonl_sink_persists_across_instances(tmp_path):
+    path = tmp_path / "logs" / "audit.jsonl"

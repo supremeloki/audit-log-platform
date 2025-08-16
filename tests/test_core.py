@@ -85,3 +85,4 @@ def test_jsonl_sink_persists_across_instances(tmp_path):
     path = tmp_path / "logs" / "audit.jsonl"
     first = AuditPlatform(sink=JsonlFileSink(path))
     first.log("alice", "login", "system", "allow")
+    first.log("bob", "export", "report", "deny")

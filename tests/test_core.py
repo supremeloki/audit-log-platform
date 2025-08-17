@@ -88,3 +88,4 @@ def test_jsonl_sink_persists_across_instances(tmp_path):
     first.log("bob", "export", "report", "deny")
 
     reopened = AuditPlatform(sink=JsonlFileSink(path))
+    assert reopened.size == 2

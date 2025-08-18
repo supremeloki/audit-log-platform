@@ -90,3 +90,4 @@ def test_jsonl_sink_persists_across_instances(tmp_path):
     reopened = AuditPlatform(sink=JsonlFileSink(path))
     assert reopened.size == 2
     assert reopened.last_hash() == first.last_hash()
+    ok, _ = reopened.verify_chain()

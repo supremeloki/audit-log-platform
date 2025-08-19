@@ -92,3 +92,4 @@ def test_jsonl_sink_persists_across_instances(tmp_path):
     assert reopened.last_hash() == first.last_hash()
     ok, _ = reopened.verify_chain()
     assert ok
+

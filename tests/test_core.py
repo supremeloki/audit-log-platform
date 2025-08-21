@@ -93,3 +93,4 @@ def test_jsonl_sink_persists_across_instances(tmp_path):
     ok, _ = reopened.verify_chain()
     assert ok
 
+

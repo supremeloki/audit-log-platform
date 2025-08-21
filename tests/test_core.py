@@ -94,3 +94,4 @@ def test_jsonl_sink_persists_across_instances(tmp_path):
     assert ok
 
 
+def test_injected_clock_controls_timestamps():

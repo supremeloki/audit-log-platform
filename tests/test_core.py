@@ -101,3 +101,4 @@ def test_injected_clock_controls_timestamps():
             self.now += 1
             return self.now
 
+    platform = AuditPlatform(clock=Clock())

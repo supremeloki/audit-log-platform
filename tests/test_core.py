@@ -99,3 +99,4 @@ def test_injected_clock_controls_timestamps():
         now = 100.0
         def __call__(self):
             self.now += 1
+            return self.now

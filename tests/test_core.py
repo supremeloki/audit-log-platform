@@ -97,3 +97,4 @@ def test_jsonl_sink_persists_across_instances(tmp_path):
 def test_injected_clock_controls_timestamps():
     class Clock:
         now = 100.0
+        def __call__(self):

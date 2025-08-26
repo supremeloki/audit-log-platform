@@ -106,3 +106,4 @@ def test_injected_clock_controls_timestamps():
     second = platform.log("u", "a2", "r", "allow")
     assert second.occurred_at > first.occurred_at
 
+

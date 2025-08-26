@@ -103,3 +103,4 @@ def test_injected_clock_controls_timestamps():
 
     platform = AuditPlatform(clock=Clock())
     first = platform.log("u", "a1", "r", "allow")
+    second = platform.log("u", "a2", "r", "allow")

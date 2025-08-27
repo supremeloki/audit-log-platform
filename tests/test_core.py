@@ -107,3 +107,4 @@ def test_injected_clock_controls_timestamps():
     assert second.occurred_at > first.occurred_at
 
 
+def test_genesis_prev_hash_is_zeroes(platform):

@@ -109,3 +109,4 @@ def test_injected_clock_controls_timestamps():
 
 def test_genesis_prev_hash_is_zeroes(platform):
     record = platform.log("first-user", "init", "system", "allow")
+    assert record.prev_hash == "0" * 64
